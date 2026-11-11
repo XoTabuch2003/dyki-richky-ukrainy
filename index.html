@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0d3b2e" />
+  <meta name="description" content="Дикі річки України — авторський проєкт про життя українських водойм, риб, екосистеми та польові дослідження." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Дикі річки України</title>
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link rel="apple-touch-icon" href="img/logo.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="#/" class="logo-link" data-page="home">
+          <img src="img/logo.png" alt="Лого" class="logo-img" />
+          <span class="logo-text">Дикі річки України</span>
+        </a>
+        <nav class="nav" id="main-nav">
+          <a href="#/articles" data-page="articles">Усі статті</a>
+          <a href="#/settings" data-page="settings">Налаштування</a>
+          <a href="#/support" data-page="support">Підтримка проєкту</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Меню">☰</button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Content injected by JS -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>© 2026 Дикі річки України · Авторський проєкт</p>
+        <a href="https://t.me/rubakcccccc" target="_blank" class="tg-link">
+          <img src="img/free-icon-telegram-11400813.png" alt="Telegram" width="20" /> rubakcccccc
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modals -->
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal" id="modal-content"></div>
+  </div>
+
+  <script src="js/cloud-config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(console.error);
+      });
+    }
+  </script>
+</body>
+</html>

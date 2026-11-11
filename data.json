@@ -1,0 +1,32 @@
+{
+  "themes": [
+    {
+      "id": "fishing",
+      "name": "Рибалка",
+      "icon": "img/free-icon-fishing-float-1833972.png"
+    },
+    {
+      "id": "fish",
+      "name": "Риба",
+      "icon": "img/free-icon-fish-2929546.png"
+    },
+    {
+      "id": "river",
+      "name": "Річка",
+      "icon": "img/free-icon-river-15726726.png"
+    },
+    {
+      "id": "vegetation",
+      "name": "Рослинність",
+      "icon": "img/free-icon-river-15726726.png"
+    },
+    {
+      "id": "animals",
+      "name": "Інші тварини",
+      "icon": "img/free-icon-fish-2929546.png"
+    }
+  ],
+  "articles": [],
+  "exportedAt": null,
+  "note": "Після створення/редагування статей у режимі куратора натисніть «Завантажити data.json для GitHub» і замініть цей файл у репозиторії."
+}
